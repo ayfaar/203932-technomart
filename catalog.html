@@ -6,52 +6,50 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="catalog-header">
+    <header class="header-catalog">
       <!--ТОП ХЕДЕРА-->
-      <div class="container">
-       
+      <div class="top-header">
+              
         <!--ЛОГОТИП-->
-        <a href="index.html" class="main-logo"><h1>Техномарт</h1></a>
+        <div class="logo">
+          <a href="index.html" ><h1>Техномарт</h1></a>
+        </div>
         
         <ul>
           <li>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" placeholder="Поиск:" name="main-search">
+              <input type="search" placeholder="Поиск:" name="search">
             </form>
           </li>
           <li>
-            <a href="#">Закладки: 0</a>
+            <a href="#">Закладки: <span class="bookmarks-quantity">0</span></a>
           </li>
           <li>
-            <a href="#">Корзина: 10</a>
+            <a href="#">Корзина: <span class="basket-quantity">10</span></a>
           </li>
           <li>
-            <!--Убрал  ссылку из div, наверно он был лишним?-->
-            <a href="#" class="main-checkout btn">Оформить заказ</a>
+            <a href="#" class="checkout btn">Оформить заказ</a>
           </li>
         </ul>
       </div><!--конец ТОП ХЕДЕР-->
 
-      <!--USER INFO)-->
-      <div class="catalog-login">
+      <!--РЕГИСТРАЦИЯ)-->
+      <div class="middle-header">
         <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
-        <div class="catalog-telephone">+7(812)55-05-55</div>
+        <p class="telephone">+7(812)55-05-55</p>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
         
-        <div class="user-info">
-           <p>
-            <a href="#">Равшан Джамшутович</a> 
-            <a href="#">Выход</a>
-           </p>
-           <ul>
-             <li><a href="#">Мои заказы</a></li>
-             <li><a href="#">Личный кабинет</a></li>
-           </ul>
+        <div class="login">
+         <a href="#">Равшан Джамшутович</a>
+         <ul>
+           <li><a href="#">Мои заказы</a></li>
+           <li><a href="#">Личный кабинет</a></li>
+         </ul>
         </div>
-      </div><!--Конец USER INFO-->
+      </div><!--Конец РЕГИСТРАЦИЯ-->
 
       <!--НАВИГАЦИЯ-->
-      <nav class="catalog-navigation">
+      <nav class="navigation">
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -63,6 +61,7 @@
         </ul>
       </nav>
     </header><!--КОНЕЦ  ХЕДЕРА-->
+
 
     <main class="container">
       <ul class="breadcrumbs">
