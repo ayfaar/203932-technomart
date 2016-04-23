@@ -7,46 +7,48 @@
   <body>
 
     <!--HEADER-->
-    <header class="main-header">
+    <header class="header">
       <!--ТОП ХЕДЕРА-->
-      <div class="container">
+      <div class="top-header">
               
         <!--ЛОГОТИП-->
-        <a href="index.html" class="main-logo"><h1>Техномарт</h1></a>
+        <div class="logo">
+          <a href="index.html" ><h1>Техномарт</h1></a>
+        </div>
         
         <ul>
           <li>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" placeholder="Поиск:" name="main-search">
+              <input type="search" placeholder="Поиск:" name="search">
             </form>
           </li>
           <li>
-            <a href="#">Закладки: 0</a>
+            <a href="#">Закладки: <span class="bookmarks-quantity">0</span></a>
           </li>
           <li>
-            <a href="#">Корзина: 0</a>
+            <a href="#">Корзина: <span class="basket-quantity">0</span></a>
           </li>
           <li>
             <!--Убрал  ссылку из div, наверно он был лишним?-->
-            <a href="#" class="main-checkout btn">Оформить заказ</a>
+            <a href="#" class="checkout btn">Оформить заказ</a>
           </li>
         </ul>
       </div><!--конец ТОП ХЕДЕР-->
 
       <!--РЕГИСТРАЦИЯ)-->
-      <div class="main-login">
+      <div class="middle-header">
         <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
-        <div class="main-telephone">+7(812)55-05-55</div>
+        <p class="telephone">+7(812)55-05-55</p>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
         
-        <div class="main-login">
+        <div class="login">
          <a href="#" class="btn">Войти</a>
          <a href="#" class="btn">Регистрация</a>
         </div>
       </div><!--Конец РЕГИСТРАЦИЯ-->
 
       <!--НАВИГАЦИЯ-->
-      <nav class="main-navigation">
+      <nav class="navigation">
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
