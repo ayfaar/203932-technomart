@@ -1,0 +1,73 @@
+body {
+    font-family: Cuprum;
+}
+
+/*FONT SETTINGS*/
+.logo{
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.top-header ul {
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.middle-header p:first-child {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.middle-header .telephone {
+    font-size: 21px;
+    line-height: 18px;
+    color: #e9292a;
+}
+.middle-header p:nth-child(3) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.middle-header .login {
+    font-size: 21px;
+    line-height: 18px;
+}
+
+header .navigation {
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.breadcrumbs {
+    font-family: sans;
+    font-size: 13px
+    line-height: 18px;
+}
+
+.propositions .items span {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+
+}
+
+.btn {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.slider h4 {
+    font-size: 36px;
+    line-height: 30px
+    font-weight: bold;
+}
+
+.slider p {
+    font-family: sans;
+    font-size: 18px;
+    line-height: 24px;
+}
+/*END FONT SETTINGS*/
