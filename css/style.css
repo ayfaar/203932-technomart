@@ -2,27 +2,28 @@ body {
     font-family: Cuprum;
 }
 
-/*FONT SETTINGS*/
+/*HEADER*/
+/*-------------------------*/
 .logo{
     font-size: 24px;
     line-height: 24px;
 }
-
-.top-header ul {
+.top-header {
     font-size: 17px;
     line-height: 18px;
 }
-
-.middle-header p:first-child {
-    font-size: 16px;
-    font-style: italic;
-    line-height: 23px;
-    color: #ee3643;
-}
-
-.middle-header .telephone {
+/*-----------------------*/
+.middle-header {
     font-size: 21px;
     line-height: 18px;
+}
+.middle-header p:first-child {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+}
+.middle-header .telephone {
     color: #e9292a;
 }
 .middle-header p:nth-child(3) {
@@ -30,44 +31,77 @@ body {
     line-height: 24px;
     color: #32425c;
 }
-
-.middle-header .login {
-    font-size: 21px;
+.middle-header .login ul {
+    font-size: 16px;
     line-height: 18px;
+    color: #32425c;
 }
 
-header .navigation {
+header nav {
     font-size: 17px;
     line-height: 17px;
 }
+/*------------------------------*/
+/*КОНЕЦ HEADER*/
+/*------------------------------*/
 
-.breadcrumbs {
-    font-family: sans;
-    font-size: 13px
-    line-height: 18px;
-}
 
-.propositions .items span {
+/*MAIN*/
+/*-----------------------------*/
+/*предложения*/
+.propositions {
     font-size: 24px;
-    font-weight: bold;
     line-height: 30px;
-
+    font-weight: bold;
 }
-
-.btn {
+.propositions .items .btn {
     font-size: 14px;
     line-height: 18px;
+    font-weight: normal;
 }
-
-.slider h4 {
+/*слайдер*/
+.propositions .slider span {
     font-size: 36px;
-    line-height: 30px
-    font-weight: bold;
 }
-
-.slider p {
+.propositions .slider p {
     font-family: sans;
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
 }
-/*END FONT SETTINGS*/
+.propositions .slider .btn {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+}
+/*-------------------------------*/
+/*-------------------------------*/
+/*популярные товары/производители*/
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+.popular .btn {
+    font-size: 14px;
+    line-height: 18px;
+}
+.popular+ul {
+    font-family: sans;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.price {
+     font-family: sans;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+}
+    
+.old-price {
+    color: #999999;
+}
+
+/*-----------------------------*/
+/*КОНЕЦ MAIN*/
+/*-----------------------------*/
