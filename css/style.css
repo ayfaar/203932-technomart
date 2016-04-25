@@ -1,5 +1,18 @@
 body {
     font-family: Cuprum;
+
+}
+ul {
+    list-style-type: none;
+}
+.btn {
+    font-size: 14px;
+    line-height: 18px;
+}
+.breadcrumbs {
+    font-style: sans;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 /*HEADER*/
@@ -31,7 +44,7 @@ body {
     line-height: 24px;
     color: #32425c;
 }
-.middle-header .login ul {
+.middle-header .login ul  a{
     font-size: 16px;
     line-height: 18px;
     color: #32425c;
@@ -59,6 +72,7 @@ header nav {
     line-height: 18px;
     font-weight: normal;
 }
+
 /*слайдер*/
 .propositions .slider span {
     font-size: 36px;
@@ -74,17 +88,14 @@ header nav {
     line-height: 18px;
     font-weight: normal;
 }
-/*-------------------------------*/
-/*-------------------------------*/
+
 /*популярные товары/производители*/
 h2 {
     font-size: 30px;
     line-height: 30px;
+    color: #32425c;
 }
-.popular .btn {
-    font-size: 14px;
-    line-height: 18px;
-}
+
 .popular+ul {
     font-family: sans;
     font-size: 18px;
@@ -105,3 +116,112 @@ h2 {
 /*-----------------------------*/
 /*КОНЕЦ MAIN*/
 /*-----------------------------*/
+
+/*СЕРВИСЫ*/
+/*-----------------------------*/
+.services p {
+    font-size: 13px;
+    line-height: 24px;
+    font-style: sans;
+}
+
+.services h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+.services h3 {
+    font-size: 36px;
+    line-height: 24px;
+    color: #32425c;
+}
+/*------------------------------*/
+/*Конец СЕРВИСЫ*/
+/*------------------------------*/
+
+/*О КОМПАНИИ*/
+.about-company p {
+    font-size: 13px;
+    line-height: 24px;
+    font-style: sans;
+}
+.about-company h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+.about-company ul {
+    font-size: 18px;
+    line-height: 20px;
+}
+/*----------------------------*/
+/*конец О КОМПАНИИ*/
+/*----------------------------*/
+
+/*ФУТЕР*/
+.top-footer {
+    font-size: 18px;
+    line-height: 24px;
+}
+.footer .logo {
+    font-size: 30px;
+    line-height: 30px;
+}
+.nav2-footer a {
+   color: #ffd180;
+}
+.bottom-footer {
+    font-size: 16px;
+    line-height: 18px;
+}
+.bottom-footer br+a {
+    color: #ffd180;
+}
+
+/*CATALOG.html(дополнительно)*/
+.filter {
+    font-family: sans;
+    font-size: 13px;
+    line-height: 18px;
+}
+.cost-filter legend,
+.manufacturers legend,
+.supply legend {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.manufacturers li {
+    font-size: 15px;
+    line-height: 20px;
+}
+.supply li {
+    font-size: 15px;
+    line-height: 20px;
+}
+/*сортировка*/
+.sorting,
+.buttons/*кнопки перехода*/ {
+    font-style: sans;
+    font-size: 13px;
+    line-height: 18px;
+}
+/*выбранный товар*/
+.items .item-name {
+    font-family: sans;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+/*----Пара слов о перфораторах--------------------------*/
+aside{
+    font-style: Cuprum;
+    font-height: 24px;
+}
+aside h2 {
+    font-size: 30px;
+    color: black;
+}
+aside p {
+    font-size: 13px;
+}
+/*---------------------------------*/
