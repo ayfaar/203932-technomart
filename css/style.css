@@ -1,227 +1,40 @@
-body {
-    font-family: Cuprum;
-
-}
 ul {
     list-style-type: none;
-}
-.btn {
-    font-size: 14px;
-    line-height: 18px;
-}
-.breadcrumbs {
-    font-style: sans;
-    font-size: 13px;
-    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: red;
 }
 
-/*HEADER*/
-/*-------------------------*/
-.logo{
-    font-size: 24px;
-    line-height: 24px;
+.left {
+    float: left;
 }
-.top-header {
-    font-size: 17px;
-    line-height: 18px;
-}
-/*-----------------------*/
-.middle-header {
-    font-size: 21px;
-    line-height: 18px;
-}
-.middle-header p:first-child {
-    font-size: 16px;
-    line-height: 23px;
-    font-style: italic;
-    color: #ee3643;
-}
-.middle-header .telephone {
-    color: #e9292a;
-}
-.middle-header p:nth-child(3) {
-    font-size: 14px;
-    line-height: 24px;
-    color: #32425c;
-}
-.middle-header .login ul  a{
-    font-size: 16px;
-    line-height: 18px;
-    color: #32425c;
+.right {
+    float: right;
 }
 
-header nav {
-    font-size: 17px;
-    line-height: 17px;
-}
-/*------------------------------*/
-/*КОНЕЦ HEADER*/
-/*------------------------------*/
-
-
-/*MAIN*/
-/*-----------------------------*/
-/*предложения*/
-.propositions {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-}
-.propositions .items .btn {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: normal;
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/*слайдер*/
-.propositions .slider span {
-    font-size: 36px;
+.container {
+    /*background-color: lightgrey;*/
+    width: 940px;  
+    padding: 0 130px;
+    padding-top: 1px;/*предотвращает вываливание marginov сверху*/
+    margin: 0 auto;
 }
-.propositions .slider p {
-    font-family: sans;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: normal;
-}
-.propositions .slider .btn {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: normal;
-}
+/*=============================*/
+.catalog-header {
 
-/*популярные товары/производители*/
-h2 {
-    font-size: 30px;
-    line-height: 30px;
-    color: #32425c;
+    background-color: yellow;
+    width: 100px;
 }
-
-.popular+ul {
-    font-family: sans;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 20px;
+.top-header .logo {
+    /*background-color: red;*/
+    margin: 0;
 }
-.price {
-     font-family: sans;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 18px;
-}
-    
-.old-price {
-    color: #999999;
-}
-
-/*-----------------------------*/
-/*КОНЕЦ MAIN*/
-/*-----------------------------*/
-
-/*СЕРВИСЫ*/
-/*-----------------------------*/
-.services p {
-    font-size: 13px;
-    line-height: 24px;
-    font-style: sans;
-}
-
-.services h2 {
-    font-size: 30px;
-    line-height: 24px;
-}
-.services h3 {
-    font-size: 36px;
-    line-height: 24px;
-    color: #32425c;
-}
-/*------------------------------*/
-/*Конец СЕРВИСЫ*/
-/*------------------------------*/
-
-/*О КОМПАНИИ*/
-.about-company p {
-    font-size: 13px;
-    line-height: 24px;
-    font-style: sans;
-}
-.about-company h2 {
-    font-size: 30px;
-    line-height: 24px;
-}
-.about-company ul {
-    font-size: 18px;
-    line-height: 20px;
-}
-/*----------------------------*/
-/*конец О КОМПАНИИ*/
-/*----------------------------*/
-
-/*ФУТЕР*/
-.top-footer {
-    font-size: 18px;
-    line-height: 24px;
-}
-.footer .logo {
-    font-size: 30px;
-    line-height: 30px;
-}
-.nav2-footer a {
-   color: #ffd180;
-}
-.bottom-footer {
-    font-size: 16px;
-    line-height: 18px;
-}
-.bottom-footer br+a {
-    color: #ffd180;
-}
-
-/*CATALOG.html(дополнительно)*/
-.filter {
-    font-family: sans;
-    font-size: 13px;
-    line-height: 18px;
-}
-.cost-filter legend,
-.manufacturers legend,
-.supply legend {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 30px;
-}
-
-.manufacturers li {
-    font-size: 15px;
-    line-height: 20px;
-}
-.supply li {
-    font-size: 15px;
-    line-height: 20px;
-}
-/*сортировка*/
-.sorting,
-.buttons/*кнопки перехода*/ {
-    font-style: sans;
-    font-size: 13px;
-    line-height: 18px;
-}
-/*выбранный товар*/
-.items .item-name {
-    font-family: sans;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: bold;
-}
-/*----Пара слов о перфораторах--------------------------*/
-aside{
-    font-style: Cuprum;
-    font-height: 24px;
-}
-aside h2 {
-    font-size: 30px;
-    color: black;
-}
-aside p {
-    font-size: 13px;
-}
-/*---------------------------------*/
+/*.top-header li {
+    display: inline-block;
+}*/
