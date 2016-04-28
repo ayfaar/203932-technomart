@@ -2,7 +2,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: red;
 }
 
 .left {
@@ -19,22 +18,50 @@ ul {
 }
 
 .container {
-    /*background-color: lightgrey;*/
+    background-color: lightgrey;
     width: 940px;  
     padding: 0 130px;
     padding-top: 1px;/*предотвращает вываливание marginov сверху*/
     margin: 0 auto;
 }
-/*=============================*/
-.catalog-header {
 
-    background-color: yellow;
-    width: 100px;
+body {
+    font-family: Cuprum;
 }
+/*=============================*/
+
+/*===========HEADER============*/
 .top-header .logo {
-    /*background-color: red;*/
-    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+
+    width: 220px;
+    background-color: red;
 }
-/*.top-header li {
-    display: inline-block;
-}*/
+.top-header li:nth-child(2) {
+    width: 240px;
+
+    font-size: 17px;
+    line-height: 18px;
+    background-color: red;
+}
+.top-header li:nth-child(n+3) {
+    width: 150px;
+
+    font-size: 17px;
+    line-height: 18px;
+    background-color: red;
+} 
+.top-header .menu {
+    width: 940px;
+    background-color: green;
+}
+
+/*НЕ РАБОТАЕТ*/
+.catalog-header {
+    background-color: #215687  ;
+}
+
+.menu {
+    background-color: yellow;
+}
