@@ -1,7 +1,10 @@
-ul {
+ul {/*сброс настроек для списков*/
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+h1 {
+    margin: 0;
 }
 
 .left {
@@ -10,7 +13,6 @@ ul {
 .right {
     float: right;
 }
-
 .clearfix {
     content: "";
     display: table;
@@ -18,10 +20,9 @@ ul {
 }
 
 .container {
-    background-color: lightgrey;
+    background-color: black;
     width: 940px;  
     padding: 0 130px;
-    padding-top: 1px;/*предотвращает вываливание marginov сверху*/
     margin: 0 auto;
 }
 
@@ -31,37 +32,98 @@ body {
 /*=============================*/
 
 /*===========HEADER============*/
-.top-header .logo {
-    font-size: 24px;
-    line-height: 24px;
+.header {
+    background-color: yellow;
+}
 
-    width: 220px;
+ul {
+    background-color: green;
+}
+li {
     background-color: red;
 }
+/*-----------top-header-------------------*/
+.top-header li:first-child {
+    width: 220px;
+}
 .top-header li:nth-child(2) {
-    width: 240px;
-
-    font-size: 17px;
-    line-height: 18px;
-    background-color: red;
+    width: 230px;
+    margin-left: 10px;
+}
+.top-header .search {
+     width: 230px;
 }
 .top-header li:nth-child(n+3) {
     width: 150px;
+    margin-left: 10px;
+}
 
+.top-header ul {
+    font-size: 0;/*сброс размера шрифтов для позиционирования inline-block*/
+}
+.top-header li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.top-header .logo h1 {
+    font-size: 24px;
+    line-height: 24px;
+}
+.top-header li:nth-child(n+3) > a,
+.top-header .search {
     font-size: 17px;
     line-height: 18px;
-    background-color: red;
-} 
-.top-header .menu {
-    width: 940px;
-    background-color: green;
+}
+/*------------middle-header----------------------------*/
+.middle-header p:first-child,
+.middle-header .address,
+.middle-header .login {
+    width: 300px;
+    background-color: grey;
+}
+.middle-header .address {
+    margin: 0 20px;
 }
 
-/*НЕ РАБОТАЕТ*/
-.catalog-header {
-    background-color: #215687  ;
+.middle-header > p:first-child {
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #ee3643;
+    font-style: italic;
+}
+.middle-header .address {
+    font-size: 21px;
+    line-height: 18px;
+
+    color: #e9292a;
+}
+.middle-header .address p:nth-child(2) {
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #32425c;
+}
+/*--------------navigation----------------------------*/
+.header .navigation li {
+    display: inline-block;
+}
+.header .navigation ul {
+    font-size: 0;/*СБРОС РАЗМЕРА ШРИФТА В 0 ДЛЯ ПОЗИЦИОНИРОВАНИЯ*/
+}
+.header .navigation a {
+    font-size: 17px;
+    line-height: 17px;
 }
 
-.menu {
-    background-color: yellow;
+/*позиционирование навигация*/
+.header .navigation li:first-child {
+    margin-left: 50px;
 }
+.header .navigation li:nth-child(n+2) {
+    margin-left: 60px;
+}
+
+
