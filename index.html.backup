@@ -150,7 +150,7 @@
 
       <!--ПЛПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ-->
       <section>
-        <div class="popular">
+        <div class="popular-all">
           <h2>Популярные производители</h2>
           <a href="#" class="btn ">Все производители</a>
         </div>

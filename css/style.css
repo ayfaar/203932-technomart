@@ -3,8 +3,11 @@ ul {/*сброс настроек для списков*/
     margin: 0;
     padding: 0;
 }
-h1 {
+h1,
+h2,
+h3 {
     margin: 0;
+    font-weight: normal;
 }
 
 .left {
@@ -27,7 +30,7 @@ h1 {
 }
 
 body {
-    font-family: Cuprum;
+    font-family: Cuprum, sans;
 }
 /*=============================*/
 
@@ -123,11 +126,204 @@ body {
 .header .navigation li:nth-child(n+2) {
     margin-left: 60px;
 }
-/*============END HESDER=====================*/
+
+/*============END HEDER=====================*/
+
+
+/*=============MAIN CONTENT=================*/
+/*-------------index.html-------------------*/
+.propositions {
+    padding-top: 60px;
+}
+
+.items .materials,
+.items .tools,
+.items .equipment,
+.items .sale,
+.items .delivery {
+    margin-bottom: 20px;
+
+    width: 300px;
+    min-height: 123px;
+
+    background-color: pink;
+}
+.items .tools {
+    margin-left:20px;
+    margin-right: 20px;
+}
+.items-text {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+
+}
+.btn {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.slider {
+    margin-bottom: 55px;
+
+    width: 620px;
+    min-height: 266px;
+
+    background-color: pink;
+
+}
+.slider .slide-name {
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.slider .slogan {
+    font-style: sans;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/*ПОПУЛЯРНЫЕ ТОВАРЫ*/
+.popular-all {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    min-height: 90px;
+
+    background-color: gray;
+}
+
+.popular-article li {
+    margin-right: 20px;
+
+    min-height: 318px;
+    width: 220px;
+    background-color: green;
+}
+.popular-article li:last-child {
+    margin-right: 0;
+}
+.popular-all h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+.popular-article .article-name {
+    font-style: sans;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.popular-article .price {
+    font-style: sans;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+
+/*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
+.popular-manufacturer {
+    margin-bottom: 85px;
+}
+.popular-manufacturer li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    width: 220px;
+    min-height: 145px;
+
+    background-color: pink;
+}
+.popular-manufacturer li:nth-child(4),
+.popular-manufacturer li:last-child {
+    margin-right: 0;
+}
+
+
+/*СЕРВИСЫ*/
+.services h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+.services-description p {
+    font-size: 13px;
+    line-height: 24px;
+}
+.services {
+    padding-top: 65px;
+
+    background-color: green;
+}
+.services-description {
+    margin-bottom: 15px;
+
+    min-height: 155px;
+    width: 400px;
+
+    background-color: pink;
+}
+
+.services-slider-navigation {
+    min-height: 185px;
+    width: 240px;
+    
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: pink;
+}
+
+.sevices-slider-container {
+    width: 630px;
+    min-height: 285px;
+
+    background-color: pink;
+}
+.services-slide h3 {
+    font-size: 36px;
+    line-height: 24px;
+}
+.services-slide {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/*О КОМПАНИИ*/
+.about-company {
+    padding-top: 80px;
+    padding-bottom: 85px;
+
+    background-color: red;
+}
+.about-company .left-column {
+    width: 540px;
+    min-height: 375px;
+
+    background-color: pink;
+}
+.about-company .right-column {
+    width: 300px;
+    min-height: 375px;
+
+    background-color: pink;
+}
+.about-company p,
+.about-company li {
+    font-family: sans;
+    font-size: 13px;
+    line-height: 24px;
+}
+.about-company  h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
 
 
 /*=============FOOTER=========================*/
 /*---------------top-footer------------------*/
+
 .top-footer .contacts {
     background-color: pink;
     width: 380px;
@@ -156,6 +352,7 @@ address {/*восстанавливаем шрифт навигации фуие
 .top-footer .logo h1 {
     font-size: 30px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 /*позиционируем навигацию футера*/
 .nav-footer li {
