@@ -10,6 +10,10 @@ h3 {
     font-weight: normal;
 }
 
+p {
+    margin: 0;
+}
+
 .left {
     float: left;
 }
@@ -208,14 +212,14 @@ body {
     font-size: 30px;
     line-height: 30px;
 }
-.popular-article .article-name {
+ .article-name {
     font-style: sans;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
 }
 
-.popular-article .price {
+.price {
     font-style: sans;
     font-size: 17px;
     line-height: 18px;
@@ -319,7 +323,105 @@ body {
     font-size: 30px;
     line-height: 24px;
 }
+/*------------конец index.html------------------*/
 
+/*----------------catalog.html------------------*/
+.catalog {
+    font-family: sans;
+}
+.breadcrumbs {
+    min-height: 60px;
+    
+    font-size: 13px;
+    line-height: 18px;
+    background-color: white;
+}
+.breadcrumbs li {
+    display: inline-block;
+}
+
+
+.article-caption {
+    min-height: 90px;
+    
+    font-family: Cuprum;
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    background-color: green;
+}
+
+.filter-form {
+    width: 230px;
+    min-height: 750px;
+    padding-top: 20px;
+    
+    text-transform: uppercase;
+    background-color: pink;
+}
+.filter-form label {
+    font-size: 15px;
+    line-height: 20px;
+}
+.filter {
+    font-size: 13px;
+    line-height: 18px;
+}
+.filter-name {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
+.sorting {
+    font-size: 13px;
+    line-height: 18px;
+}
+.selected-items {
+    width: 700px;
+    min-height: 1140px;
+    padding-top: 20px;
+
+    background-color: pink;
+}
+.selected-items ul {
+    font-size: 0;/*сброс шрифта для выравнивания*/
+}
+.selected-items li {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    min-height: 320px;
+
+    background-color: green;
+}
+.items li {
+    margin-top: 20px;
+}
+.items li:nth-child(2),
+.items li:nth-child(5),
+.items li:nth-child(8) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.about-perforator {
+    padding-top: 65px;
+    padding-bottom: 70px;
+    
+    font-size: 13px;
+    line-height: 21px;
+    background-color: red;
+}
+.about-perforator h2 {
+    margin-bottom: 35px;
+
+    font-family: Cuprum;
+    font-size: 30px;
+    line-height: 24px;
+}
 
 /*=============FOOTER=========================*/
 /*---------------top-footer------------------*/
