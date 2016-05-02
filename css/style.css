@@ -40,6 +40,8 @@ body {
 
 /*===========HEADER============*/
 .header {
+    width: 100%;
+
     background-color: yellow;
 }
 
@@ -425,7 +427,9 @@ body {
 
 /*=============FOOTER=========================*/
 /*---------------top-footer------------------*/
-
+.footer {
+    width: 100%;
+}
 .top-footer .contacts {
     background-color: pink;
     width: 380px;
