@@ -111,7 +111,7 @@ body {
       
       box-sizing: border-box;
       width: inherit;
-      padding: 10px 0 14px 50px;
+      padding: 10px 0 14px 48px;
 
       font-size: 17px;
       line-height: 18px;
@@ -121,32 +121,30 @@ body {
       background-color: #293449;
     }
 
-      .search::before {/*иконка в поле поиска*/
-        position: absolute;
-        top: 10px;
-        left: 20px;
+    .search::before {/*иконка в поле поиска*/
+      position: absolute;
+      top: 12px;
+      left: 17px;
 
-        content: '';
-        display: table;
+      content: '';
+      display: table;
 
-        width: 20px;
-        height: 20px;
+      width: 20px;
+      height: 20px;
 
-        background: transparent url(../img/sprite-icon.png) no-repeat -5px -490px;
+      background: transparent url(../img/sprite-icon.png) no-repeat -5px -490px;
       }
 
       .search:hover::before {/*иконка в поле поиска*/
-        position: absolute;
-        top: 10px;
-        left: 20px;
-
-        content: '';
-        display: table;
-
-        width: 20px;
-        height: 20px;
-
         background: transparent url(../img/sprite-icon.png) no-repeat -5px -517px;
+      }
+
+      .search__search-field:focus {
+        position: absolute;
+
+        border: none;
+        background: white url(../img/search-icon-focus.png) no-repeat 16px 49%;
+        color: #000000;
       }
 
       /*НЕ ЗНАЮ КАК ФОКУС НА ПОИСКЕ СТИЛМЗОВАТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -174,13 +172,16 @@ body {
     .checkout__basket {
       position: relative;
       display: block;
-      padding: 12px 0 12px 42px;
+      padding: 12px 0 12px 47px;
 
       font-size: 17px;
       line-height: 18px;
       color: #ffffff;
 
       text-decoration: none;
+    }
+    .checkout__bookmarks {
+      padding-left: 44px;
     }
 
 
@@ -268,7 +269,8 @@ body {
 
 
 .header__bottom {
-  padding-top: 45px;
+  padding-top: 47px;
+  padding-bottom: 65px;
 
   background-color: #f1f5f7;
 }
@@ -330,7 +332,7 @@ body {
 
     .contacts__address {
       display: block;
-      margin: -12px 0 0 10px;
+      margin: -15px 0 0 10px;
 
       font-size: 14px;
       line-height: 24px;
@@ -419,6 +421,7 @@ body {
     color: #ffffff;
 
     background-color: #32425c;
+    box-shadow: 0 5px 0 0 #293449;
     list-style: none;
   }
 
