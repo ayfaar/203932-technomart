@@ -104,7 +104,7 @@ body {
     width: 270px;
   }
     .search {
-      position: relative;/*для размещения иконки*/
+      position: relative;/*для размещения rкнопки*/
     }  
 
     .search__search-field {
@@ -121,33 +121,32 @@ body {
       background-color: #293449;
     }
 
-    .search::before {/*иконка в поле поиска*/
+
+    .serch__btn {
       position: absolute;
       top: 12px;
       left: 17px;
-
-      content: '';
-      display: table;
-
       width: 20px;
       height: 20px;
 
+      font-size: 0;
+
+      border: none;
       background: transparent url(../img/sprite-icon.png) no-repeat -5px -490px;
-      }
+    }
 
-      .search:hover::before {/*иконка в поле поиска*/
-        background: transparent url(../img/sprite-icon.png) no-repeat -5px -517px;
-      }
+    .search__search-field:hover + .serch__btn {
+      background: transparent url(../img/sprite-icon.png) no-repeat -5px -517px;
+    }
 
-      .search__search-field:focus {
-        position: absolute;
-
-        border: none;
-        background: white url(../img/search-icon-focus.png) no-repeat 16px 49%;
-        color: #000000;
-      }
-
-      /*НЕ ЗНАЮ КАК ФОКУС НА ПОИСКЕ СТИЛМЗОВАТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .search__search-field:focus + .serch__btn {
+      background: transparent url(../img/sprite-icon.png) no-repeat -5px -544px;
+    }
+    .search__search-field:focus {
+      background-color: #ffffff;
+      color: #000000;
+    }
+ 
 /*---------------END SEARCH----------------------*/
 
 
@@ -157,6 +156,7 @@ body {
   
   outline-style: none;
 }
+
   .checkout {
     padding: 0;
     font-size: 0;
@@ -168,21 +168,36 @@ body {
       width: 150px;
     }
 
-    .checkout__bookmarks,
-    .checkout__basket {
-      position: relative;
-      display: block;
-      padding: 12px 0 12px 47px;
 
-      font-size: 17px;
-      line-height: 18px;
-      color: #ffffff;
+      .checkout__bookmarks,
+      .checkout__basket {
+        position: relative;
+        display: block;
+        padding: 12px 0 12px 47px;
 
-      text-decoration: none;
-    }
-    .checkout__bookmarks {
-      padding-left: 44px;
-    }
+        font-size: 17px;
+        line-height: 18px;
+        color: #ffffff;
+
+        text-decoration: none;
+      }
+      .checkout__bookmarks {
+        padding-left: 44px;
+      }
+
+      .checkout__btn {
+        display: block;
+        padding: 12px 20px 12px 20px;
+
+        font-size: 17px;
+        line-height: 18px;
+        color: #ffffff;
+
+        text-decoration: none;
+        text-align: center;
+
+        background-color: #63a63e;
+      }
 
 
       .checkout__bookmarks::before {/*иконка закладок*/
@@ -198,22 +213,6 @@ body {
         background: transparent url(../img/sprite-icon.png) no-repeat -5px -57px;
       }
 
-        .checkout__bookmarks:hover::before {/*иконка закладок при наведении*/
-          background: transparent url(../img/sprite-icon.png) no-repeat -5px -83px;
-        }
-
-        .checkout__bookmarks:hover {/*задний фон закладок при наведении*/
-          background-color: #212a3a;
-        }
-
-        .checkout__bookmarks:active::before {/*иконка закладок при клике*/
-          background: transparent url(../img/sprite-icon.png) no-repeat -5px -57px;
-        }
-        .checkout__bookmarks:active {/*задний фон закладок при клике*/
-          background-color: #161d29;
-        }
-
-
       .checkout__basket::before {/*иконка корзины*/
         position: absolute;
         top: 11px;
@@ -227,44 +226,42 @@ body {
         background: transparent url(../img/sprite-icon.png) no-repeat -5px -5px;
       }
 
+        .checkout__bookmarks:hover,
+        .checkout__basket:hover {
+          background-color: #212a3a;
+        }
+
+        .checkout__btn:hover {
+          background-color: #5fbb2d;
+        }
+
+        .checkout__bookmarks:hover::before {/*иконка закладок при наведении*/
+          background: transparent url(../img/sprite-icon.png) no-repeat -5px -83px;
+        }
+
         .checkout__basket:hover::before {/*иконка корзины при наведении*/
           background: transparent url(../img/sprite-icon.png) no-repeat -5px -31px;
         }
 
-        .checkout__basket:hover {/*задний фон корзины при наведении*/
-          background-color: #212a3a;
+           
+        .checkout__bookmarks:active,
+        .checkout__basket:active {
+          background-color: #161d29;
+          color: #8b8e94;
+        }
+        
+        .checkout__btn:active {
+          background-color: #518534;
+          color: #b7c9af;
+        }
+
+        .checkout__bookmarks:active::before {/*иконка закладок при клике*/
+           background: transparent url(../img/sprite-icon.png) no-repeat -5px -57px;
         }
 
         .checkout__basket:active::before {/*иконка корзины при клике*/
           background: transparent url(../img/sprite-icon.png) no-repeat -5px -5px;
         }
-
-        .checkout__basket:active {/*задний фон корзины при клике*/
-          background-color: #161d29;
-        }
-
-
-    .checkout__btn {
-      display: block;
-      padding: 12px 20px 12px 20px;
-
-      font-size: 17px;
-      line-height: 18px;
-      color: #ffffff;
-
-      text-decoration: none;
-      text-align: center;
-
-      background-color: #63a63e;
-    }
-
-      .checkout__btn:hover {
-        background-color: #5fbb2d;
-      }
-      
-      .checkout__btn:active {
-        background-color: #518534;
-      }
 /*------------END CHECKOUT-----------------------*/
 
 
@@ -445,6 +442,7 @@ body {
         .navigation__link:active {
           color: #84888e;
           background-color: #1d2739;
+          box-shadow: 0 5px 0 0 #1d2739;
         }
 
       .navigation__item-main {
