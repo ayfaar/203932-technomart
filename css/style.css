@@ -445,14 +445,16 @@ body {
           box-shadow: 0 5px 0 0 #1d2739;
         }
 
-      .navigation__item-main {
+      .navigation__item:first-child .navigation__link {
         padding-left: 51px;
         padding-right: 33px;
       }
-      .navigation__item-contacts {
+      .navigation__item:last-child .navigation__link {
         padding-right: 54.5px;
         padding-left: 34px;
       }
+
+
 /*-----------------END NAVIGATION----------------*/
 
 
