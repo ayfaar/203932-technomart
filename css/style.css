@@ -190,7 +190,7 @@ body {
         padding: 12px 20px 12px 20px;
 
         font-size: 17px;
-        line-height: 18px;
+        /*line-height: 18px;*/
         color: #ffffff;
 
         text-decoration: none;
@@ -428,17 +428,13 @@ body {
     margin: 0;
   }
 
-  .navigation__item .navigation__link{
-    padding: 20px 30px 16px 30px;
-  }
-
-
     .navigation__item {
       display: inline-block;
     }
       
       .navigation__link {
         display: block;
+        padding: 20px 30px 16px 30px;
         
         font-size: 17px;
         line-height: 17px;
