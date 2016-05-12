@@ -72,7 +72,7 @@ body {
       position: relative;/*чтобы нижняя тень отрисовывалась повер других элементов*/
       display: block;
 
-      padding: 9px ;
+      padding: 10px ;
 
       font-size: 24px;
       line-height: 24px;
@@ -114,14 +114,24 @@ body {
       padding: 10px 0 14px 48px;
 
       font-size: 17px;
-      line-height: 18px;
+      /*line-height: 18px;*/
       color: #ffffff;
 
       border: none;
-      background-color: #293449;
+      background: #293449 url(../img/search-icon-normal.png) no-repeat 15px 13px;
     }
+    
 
-
+    .search__search-field:hover {
+      background: transparent url(../img/search-icon-hover.png) no-repeat 15px 13px;
+    }
+    .search__search-field:focus {
+      background: #ffffff url(../img/search-icon-focus.png) no-repeat 15px 13px;
+      color: #000000;
+    }
+    
+    
+    /*КНОПКА В СТРОКЕ ПОИСКА
     .serch__btn {
       position: absolute;
       top: 12px;
@@ -133,19 +143,16 @@ body {
 
       border: none;
       background: transparent url(../img/sprite-icon.png) no-repeat -5px -490px;
+
     }
 
     .search__search-field:hover + .serch__btn {
       background: transparent url(../img/sprite-icon.png) no-repeat -5px -517px;
-    }
 
     .search__search-field:focus + .serch__btn {
       background: transparent url(../img/sprite-icon.png) no-repeat -5px -544px;
     }
-    .search__search-field:focus {
-      background-color: #ffffff;
-      color: #000000;
-    }
+    }*/
  
 /*---------------END SEARCH----------------------*/
 
