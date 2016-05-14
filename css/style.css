@@ -11,6 +11,7 @@
 *wrapper.......... основной контейнер контента
 *new.............. лэйбел new 
 *card.............карточка для размещения товара
+*btn.............. основной класс кнопки
 *
 *COMPONENTS
 **HEADER..........
@@ -67,14 +68,17 @@ body {
 }
 
 
+/*----------------NEW----------------------------*/
 .new {
   font-size: 0;
   width: 60px;
   height: 59px;
   background-image: url(../img/new.png);
 }
+/*----------------END NEW------------------------*/
 
 
+/*---------------CARD----------------------------*/
 .card{
   position: relative;
   display: inline-block;
@@ -158,16 +162,38 @@ body {
     text-decoration: line-through;
   }
   .card__item-price::after {/*заостренный конец блока цены*/
+    content: '';
     position: absolute;
     left: 121px;
     top: -1px;
-    content: '';
     width: 0;
     height: 0;
     border: 20px solid transparent;
     border-radius: 3px;
     border-left-color: #ee3643; 
   }
+  /*-------------END CARD-------------------------*/
+
+
+  /*---------------------BTN---------------------*/
+  .btn {
+      display: block;
+      box-sizing: border-box;
+
+      padding: 10px;
+
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      
+      border-radius: 2px;  
+      background-color: #ee3643;
+    }
+  /*------------END BTN--------------------------*/
 
 
 
@@ -849,18 +875,133 @@ body {
       background: #f6b22d url(../img/delivery-icon.png) no-repeat 85% 50%;
     }
 
-/*-----------------------------------------------*/
+/*------------------END OFFERS-------------------*/
 
 
 /*----------------SLIDER-------------------------*/
 .slider {
+  position: relative;
   width: 620px;
   height: 268px;
+  box-sizing: border-box;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
 
   overflow: hidden;
   background-color: rgba(23, 33, 10, 0.2);
 }
-/*-----------------------------------------------*/
+
+  .slider__slide {
+    display: block;
+    width: inherit;
+    height: inherit;
+
+    padding: 25px 25px 22px 25px;
+
+  }
+
+    .slider__slide-caption {
+      margin: 0 0 10px 0;
+
+      font-size: 36px;
+      line-height: 30px;
+      font-weight: bold;
+
+    }
+
+    .slider__slide-slogan {
+      margin: 0;
+
+      font-family: 'PT Sans';
+      font-size: 18px;
+      line-height: 24px;
+    }
+  
+  .btn_slider {
+    position: absolute;
+    left: 25px;
+    bottom: 22px;
+
+    width: 195px;
+  }
+
+  .slider__slide_1 {
+    /*display: none;*/
+    background-image: url(../img/slide-1.jpg);
+  }
+
+  .slider__slide_2 {
+    /*display: none;*/
+    background-image: url(../img/slide-2.jpg);
+  }
+
+  .slider__selector-container {
+    position: absolute;
+    left:50%;
+    bottom: 33px;
+
+    width: 100px;
+    margin-left: -50px;
+
+    text-align: center;
+
+    outline: 1px solid red;
+  }
+
+    input[type="radio"] { display: none; }
+
+    .slider__selector-container label {
+      position: relative;
+      display: inline-block;
+
+      
+      left: -2px;
+      width: 10px;
+      height: 10px;
+
+      margin-left: 3px;
+      margin-right: 5px;
+      
+      border-radius: 50%;
+      background: #ffffff;
+
+      cursor: pointer;
+    }
+
+     #slide1:checked ~ .slider__selector-container label[for="slide1"],
+     #slide2:checked ~ .slider__selector-container label[for="slide2"] {
+      position: relative;
+      display: inline-block;
+
+      
+      left: -2px;
+      width: 6px;
+      height: 6px;
+
+      margin-left: 5px;
+      margin-right: 5px;
+      
+      border-radius: 50%;
+      background: #ee3643;
+      border: 2px solid #ffffff;
+
+      cursor: pointer;
+    }
+
+    #slide1:checked  ~ .slider__slide_2 {
+      display: none;
+    } 
+    
+    #slide2:checked ~ .slider__slide_1 {
+      display: none;
+    }
+    
+  
+
+
+/*----------------END SLIDER---------------------*/
 
 
 /*-----------------POPULAR-----------------------*/
@@ -884,26 +1025,13 @@ body {
       text-transform: uppercase;
     }
 
-    .popular__btn {
+    .btn_popular {
       position: absolute;
-      display: block;
-      box-sizing: border-box;
       right: 25px;
       top: 23px;
 
       width: 253px;
-      padding: 10px;
 
-      font-size: 14px;
-      line-height: 18px;
-      color: #ffffff;
-
-      text-decoration: none;
-      text-transform: uppercase;
-      text-align: center;
-      
-      border-radius: 2px;  
-      background-color: #ee3643;
     }
 
 
@@ -926,11 +1054,11 @@ body {
       height: 145px;
   }
 
-  .card__img-container_manufacturer {
+  .card__img-container_manufacturer {/*для центрирования изображения*/
     line-height: 145px;
 
   }
-/*-----------------------------------------------*/
+/*-------------END POPULAR-----------------------*/
 
 
 
