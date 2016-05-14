@@ -7,7 +7,10 @@
 *right-side....... float вправо
 *clearfix......... сброс обтекания float
 *body............. оснвные стили body
+*
 *wrapper.......... основной контейнер контента
+*new.............. лэйбел new 
+*card.............карточка для размещения товара
 *
 *COMPONENTS
 **HEADER..........
@@ -25,6 +28,11 @@
 ***contacts-footer
 ***feedback
 ***изменение состояний элементов
+*
+**MAIN-index.html
+***offers.........основные предложения сайта
+***slider
+***popular........популярные товары и фирмы
 */
 
 
@@ -57,6 +65,110 @@ body {
 
   margin: 0 auto;
 }
+
+
+.new {
+  font-size: 0;
+  width: 60px;
+  height: 59px;
+  background-image: url(../img/new.png);
+}
+
+
+.card{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  
+
+  box-sizing: border-box;
+  width: 220px;
+  
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  font-family: 'PT Sans';
+  font-weight: bold;  
+  font-size: 18px;
+  line-height: 20px;
+
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+}
+  
+  .card a {     
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .card__img-container {
+    width: 220px;
+    height: 175px;
+    margin-bottom: 5px;
+    overflow: hidden;
+
+    line-height: 175px;
+    text-align: center;
+
+    vertical-align: middle;
+  }
+    .card__img-container img {
+      vertical-align: middle;
+    }
+  
+  .card__item-manufacturer {
+    display: block;
+  }
+
+  .card__item-model {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .card__item-price {
+    position: relative;
+    margin-left: 40px;
+
+    display: block;
+    box-sizing: border-box;
+    width: 122px;
+    padding: 9px;
+    
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #ffffff;
+    
+    border-radius: 2px;
+    background-color: #ee3643;
+  }
+
+  .card__item-price_old {
+    display: block;
+    color: #999999;
+    margin-bottom: 10px;
+    min-height: 20px;
+
+    text-decoration: line-through;
+  }
+  .card__item-price::after {/*заостренный конец блока цены*/
+    position: absolute;
+    left: 121px;
+    top: -1px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-radius: 3px;
+    border-left-color: #ee3643; 
+  }
+
 
 
 
@@ -639,6 +751,186 @@ body {
 }
 /*-----------------------------------------------*/
 
+
+
+
+
+
+/*-----------------------------------------------*\
+                MAIN-index.html                           
+\*-----------------------------------------------*/
+
+.main__main {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  background-color: #ffffff;
+}
+
+/*------------------OFFERS-----------------------*/
+.offers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  .offers__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 21px 21px 22px 22px;
+
+    margin-bottom: 20px;
+    background-color: rgba(123, 233, 10, 0.2);
+  }
+
+    .offers:first-child .offers__item:nth-child(2) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .offers:last-child .offers__item:last-child {
+      margin-bottom: 53px;
+    }
+
+    .new {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+      
+    .offers__item-caption {
+      margin: 0 0 12px 0;
+      padding: 0;
+
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .offers__btn {
+      display: block;
+      box-sizing: border-box;
+      width: 135px;
+      height: 38px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+
+      border-radius: 3px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+
+    .offers__item_materials {
+      background: #f6b22d url(../img/materials-icon.png) no-repeat 83% 50%;
+    }
+
+    .offers__item_instruments {
+      background: #4aafde url(../img/instruments-icon.png) no-repeat 87% 50%;
+    }
+
+    .offers__item_technics {
+      background: #cc79d1 url(../img/technics-icon.png) no-repeat 85% 50%;
+    }
+
+    .offers__item_sale {
+      background: #85d179 url(../img/sale-icon.png) no-repeat 80% 50%;
+    }
+
+    .offers__item_delivery {
+      background: #f6b22d url(../img/delivery-icon.png) no-repeat 85% 50%;
+    }
+
+/*-----------------------------------------------*/
+
+
+/*----------------SLIDER-------------------------*/
+.slider {
+  width: 620px;
+  height: 268px;
+
+  overflow: hidden;
+  background-color: rgba(23, 33, 10, 0.2);
+}
+/*-----------------------------------------------*/
+
+
+/*-----------------POPULAR-----------------------*/
+.popular__caption {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 27px 0 30px 26px;
+
+    background-color: #f7f3ec;
+  }
+    .popular__caption h3 {
+      margin: 0;
+      padding: 0;
+
+      font-size: 30px;
+      line-height: 30px;
+      color: #32425c;
+      font-weight: normal;
+
+      text-transform: uppercase;
+    }
+
+    .popular__btn {
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      right: 25px;
+      top: 23px;
+
+      width: 253px;
+      padding: 10px;
+
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      
+      border-radius: 2px;  
+      background-color: #ee3643;
+    }
+
+
+  .popular__items-list,
+  .popular__manufacturers-list {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 0;
+    list-style: none;
+    }
+
+  .popular__items-list .card:nth-child(4n),
+  .popular__manufacturers-list .card:nth-child(4n) {
+      margin-right: 0;
+    }
+
+  
+  .card_manufacturer {
+      height: 145px;
+  }
+
+  .card__img-container_manufacturer {
+    line-height: 145px;
+
+  }
+/*-----------------------------------------------*/
 
 
 

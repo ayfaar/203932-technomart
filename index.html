@@ -104,178 +104,189 @@
     <main class="main">
       
       <div class="wrapper main__main">
-        <!--ПРЕДЛОЖЕНИЯ -->
-        <ul class="offers">
-          <li class="offers__materials">
-            <span class="new">new</span>
-            <h2>Матерриалы</h2>
-            <a href="#" class="offers__btn">На любой вкус</a>
-          </li>
-          <li class="offers__instruments">
-            <h2>Инструмент</h2>
-            <a href="#" class="offers__btn">На все слечаи</a>
-          </li>
-          <li class="offers__technics">
-            <h2>Техника</h2>
-            <a href="#" class="offers__btn">Для стройки</a>
-          </li>
-          <li class="offers__sale">
-            <h2>Скидки 50%</h2>
-            <a href="#" class="offers__btn">На 350 товаров</a>
-          </li>
-          <li class="offers__delivery">
-            <h2>Доставка</h2>
-            <a href="#" class="offers__btn">Бесплатно</a>
-          </li>
-        </ul><!--конец ПРЕДЛОЖЕНИЯ-->
+        <div class="clearfix">     
+          <!--ПРЕДЛОЖЕНИЯ -->
+          <ul class="offers  clearfix">
+            <li class="offers__item  offers__item_materials  left-side">
+              <span class="new">new</span>
+              <h2 class="offers__item-caption">Материалы</h2>
+              <a href="#" class="offers__btn">На любой вкус</a>
+            </li>
+            <li class="offers__item  offers__item_instruments  left-side">
+              <h2 class="offers__item-caption">Инструмент</h2>
+              <a href="#" class="offers__btn">На все слечаи</a>
+            </li>
+            <li class="offers__item  offers__item_technics  left-side">
+              <h2 class="offers__item-caption">Техника</h2>
+              <a href="#" class="offers__btn">Для стройки</a>
+            </li>
+          </ul>
 
 
-        <!--СЛАЙДЕР-->
-        <div class="slider">
-          <div class="slider__slide-1">
-            <h4 class="slider__slide-caption">Перфораторы</h4>
-            <p class="slider__slide-slogan">Настоящие мужские игрушки</p>
-            <a href="#" class="slider__btn">Открыть каталог</a>
-          </div>
+          <!--СЛАЙДЕР-->
+          <div class="slider  left-side">
+            <div class="slider__slide-1">
+              <h4 class="slider__slide-caption">Перфораторы</h4>
+              <p class="slider__slide-slogan">Настоящие мужские игрушки</p>
+              <a href="#" class="slider__btn">Открыть каталог</a>
+            </div>
 
-          <div class="slider__slide-2">
-            <h4 class="slider__slide-caption">Дрели</h4>
-            <p class="slider__slide-slogan">Соседям на радость</p>
-            <a href="#" class="slider__btn">Открыть каталог</a>
-          </div>
-        </div><!--Конец СЛАЙДЕР-->
+            <div class="slider__slide-2">
+              <h4 class="slider__slide-caption">Дрели</h4>
+              <p class="slider__slide-slogan">Соседям на радость</p>
+              <a href="#" class="slider__btn">Открыть каталог</a>
+            </div>
+          </div><!--Конец СЛАЙДЕР-->
+
+
+          <ul class="offers  clearfix">
+            <li class="offers__item  offers__item_sale  right-side">
+              <h2 class="offers__item-caption">Скидки 50%</h2>
+              <a href="#" class="offers__btn">На 350 товаров</a>
+            </li>
+            <li class="offers__item  offers__item_delivery  right-side">
+              <h2 class="offers__item-caption">Доставка</h2>
+              <a href="#" class="offers__btn">Бесплатно</a>
+            </li>
+          </ul><!--конец ПРЕДЛОЖЕНИЯ-->
+        </div>
 
 
         <!-- ПОПУЛЯРНЫЕ -->
         <artticle class="popular">
           <div class="popular__items">
-            <h3 class="popular__caption">Товары</h3>
-            <a href="" class="popular__btn">Все товары</a>
+            <div class="popular__caption">
+              <h3>Популярные товары:</h3>
+              <a href="#" class="popular__btn">Все популярные товары</a>
+            </div>            
 
              <!-- ПОПУЛЯРНЫЕ ТОВАРЫ -->
             <ul class="popular__items-list">
-              <li class="popular__item">
-                <div class="popular__item-img-container">
+              <li class="card">
+                <div class="card__img-container">
                   <a href="#">
                     <img src="img/content//items/bfg-9000.jpg" alt="bfg-9000" width="184" height="164">
                   </a>
                 </div>
                 <a href="#">
-                  <span class="popular__item-manufacturer">Перфоратор BOSCH</span>
-                  <span class="popular__item-model">BFG 9000</span><br>
+                  <span class="card__item-manufacturer">Перфоратор BOSCH</span>
+                  <span class="card__item-model">BFG 9000</span>
                 </a>
-                <del class="popular__item-price  popular__item-price_old">32500 Р.</del><br>
-                <span class="popular__item-price  popular__item-price_new">25500 Р.</span>
-              </li>
+                <span class="card__item-price_old">32500 Р.</span>
+                <span class="card__item-price">25500 Р.</span>
+              </li><!--
 
-              <li class="popular__item">
-                <div class="popular__item-img-container">
+           --><li class="card">
+                <div class="card__img-container">
                   <a href="#">
                     <img src="img/content//items/bfg-3000.jpg" alt="bfg-3000" width="127" height="112">
                   </a>
                 </div>
                 <a href="#">
-                  <span class="popular__item-manufacturer">Перфоратор BOSCH</span>
-                  <span class="popular__item-model">BFG 3000</span><br>
+                  <span class="card__item-manufacturer">Перфоратор BOSCH</span>
+                  <span class="card__item-model">BFG 3000</span>
                 </a>
-                <del class="popular__item-price  popular__item-price_old">22500 Р.</del><br>
-                <span class="popular__item-price  popular__item-price_new">15500 Р.</span>
-              </li>
+                <del class="card__item-price_old">22500 Р.</del>
+                <span class="card__item-price">15500 Р.</span>
+              </li><!--
 
-              <li class="popular__item">
-                <div class="popular__item-img-container">
+           --><li class="card">
+                <div class="card__img-container">
                   <a href="#">
                     <img src="img/content//items/bfg-6000.jpg" alt="bfg-6000" width="144" height="128">
                   </a>
                 </div>
                 <a href="#">
-                  <span class="popular__item-manufacturer">Перфоратор BOSCH</span>
-                  <span class="popular__item-model">BFG 6000</span><br>
+                  <span class="card__item-manufacturer">Перфоратор BOSCH</span>
+                  <span class="card__item-model">BFG 6000</span>
                 </a>
-                <del class="popular__item-price  popular__item-price_old">30500 Р.</del><br>
-                <span class="popular__item-price  popular__item-price_new">22500 Р.</span>
-              </li>
+                <del class="card__item-price_old">30500 Р.</del>
+                <span class="card__item-price">25500 Р.</span>
+              </li><!--
 
-              <li class="popular__item">
+           --><li class="card">
                 <span class="new">new</span>
-                <div class="popular__item-img-container">
+                <div class="card__img-container">
                   <a href="#">
                     <img src="img/content//items/bfg-2000.jpg" alt="bfg-2000" width="127" height="112">
                   </a>
                 </div>
                 <a href="#">
-                  <span class="popular__item-manufacturer">Перфоратор BOSCH</span>
-                  <span class="popular__item-model">BFG 2000</span><br>
+                  <span class="card__item-manufacturer">Перфоратор BOSCH</span>
+                  <span class="card__item-model">BFG 2000</span>
                 </a>
-                <span class="popular__item-price  popular__item-price_new">12500 Р.</span>
+                <span class="card__item-price_old"></span>
+                <span class="card__item-price">12500 Р.</span>
               </li>
             </ul>
           </div>
 
            <!-- Популярные ПРОИЗВОДИТЕЛИ -->
           <div class="popular__manufacturers">
-            <h3 class="popular__caption">Производители</h3>
-            <a href="#" class="popular__btn">Все производители</a>
-
+            <div class="popular__caption">
+              <h3>Популярные производители:</h3>
+              <a href="#" class="popular__btn">Все производители</a>
+            </div>
+            
             <ul class="popular__manufacturers-list">
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+              <li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/bosch.jpg" alt="Bosh" width="126" height="37">
                   </a>
                 </div>
-              </li>
+              </li><!--
 
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+            --><li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/Makita.jpg" alt="Makita" width="123" height="40">
                   </a>
                 </div>
-              </li>
+              </li><!--
 
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+            --><li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/DeWALT.jpg" alt="DeWalt" width="146" height="44">
                   </a>
                 </div>
-              </li>
+              </li><!--
 
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+           --><li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/intercol.jpg" alt="Interskol" width="200" height="88">
                   </a>
                 </div>
-              </li>
+              </li><!--
 
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+           --><li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/Hitachi.jpg" alt="Hitachi" width="169" height="31">
                   </a>
                 </div>
-              </li>
+              </li><!--
 
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+           --><li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/LG.jpg" alt="LG" width="121" height="73">
                   </a>
                 </div>
-              </li>
+              </li><!--
 
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+           --><li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/AEG.jpg" alt="Aeg" width="151" height="96">
                   </a>
                 </div>
-              </li>
+              </li><!--
 
-              <li class="popular__manufacturer">
-                <div class="popular__manufacturers-img-container">
+           --><li class="card  card_manufacturer">
+                <div class="card__img-container  card__img-container_manufacturer">
                   <a href="#">
                     <img src="img/content/manufacturers/Metabo.jpg" alt="Metabo" width="204" height="69">
                   </a>
