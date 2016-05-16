@@ -34,6 +34,7 @@
 ***offers.........основные предложения сайта
 ***slider
 ***popular........популярные товары и фирмы
+***services....... предоставляемые компнией сервисы(слайдер)
 */
 
 
@@ -181,7 +182,7 @@ body {
       box-sizing: border-box;
 
       padding: 10px;
-
+      
       font-size: 14px;
       line-height: 18px;
       color: #ffffff;
@@ -1086,6 +1087,195 @@ body {
 
   }
 /*-------------END POPULAR-----------------------*/
+
+
+/*-----------------SERVICES----------------------*/
+.main__services {
+  padding-top: 70px;
+  padding-bottom: 0px;
+  
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color:  #f2f6f8;
+}
+  .services__caption {
+    margin: 0;
+    padding-bottom: 16px;
+
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: normal;
+
+    text-transform: uppercase;
+  }
+
+  .services__slogan {
+    font-family: 'PT Sans';
+  }
+  
+  .services__slogan {
+    margin-bottom: 70px;
+  }
+
+  .services__slider-control {
+    position: relative;
+    margin: 0;
+    
+    padding: 0;
+    width: 240px;
+
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+
+    list-style: none;
+
+    color: #ffffff;
+    background-color: #32425c;
+  }
+
+    .services__slider-control  label {
+      display: block;
+      padding: 15px 22px 15px 22px;
+      cursor: pointer;      
+    }
+
+    .services__slider-control li:nth-child(1),
+    .services__slider-control li:nth-child(2) {
+      border-bottom: 1px solid #293449;
+    }
+
+    .services__slider-control li:nth-child(2),
+    .services__slider-control li:nth-child(3) {
+       border-top: 1px solid #405069;
+    }
+
+    /*тень справа*/
+    .services__slider-control:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -50%;
+      margin-top: 47px;
+
+      width: 10px;
+      height: 260px;
+      background-image: url(../img/services-controls-shadow.png);
+    }
+
+  .services__slide {
+    position: relative;
+    box-sizing: border-box;
+    width: 640px;
+    height: 283px;
+     outline: 2px solid red; 
+    /**/
+    overflow-y: hidden;
+    padding-left: 20px;
+  }
+
+    .services__name {
+      margin: 5px 10px 30px 0px;
+
+      font-size: 36px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #32425c;
+
+      text-transform: uppercase;
+    }
+
+    .services__description {
+      margin: 0;
+      max-width: 385px;
+      
+      font-family: 'PT Sans';
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    .btn_services {
+      position: absolute;
+      left: 20px;
+      bottom: 112px;
+      width: 195px;
+    }
+
+   /*размещаем фон слайда 1*/
+  .services__slide_1::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 465px;
+    height: 265px;
+    background-image: url(../img/services-delivery.png);
+    overflow-y: hidden;
+  } 
+
+  /*размещаем фон слайда 2*/
+  .services__slide_2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -85px;
+    width: 465px;
+    height: 265px;
+    background-image: url(../img/services-guaranty.png);
+  } 
+
+  /*размещаем фон слайда 3*/
+  .services__slide_3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 465px;
+    height: 265px;
+    background-image: url(../img/services-credit.png);
+  } 
+
+  
+  /*включаем 1й слайд*/
+  #services__delivery:checked ~ .services__slide_2 {
+    display: none;
+  }
+  #services__delivery:checked ~ .services__slide_3 {
+    display: none;
+  }
+  #services__delivery:checked ~ .services__slider-control  li:first-child {
+    background: #ffffff;
+    color: #32425c;
+  }
+
+  /*включаем 2й слайд*/
+  #services__garanty:checked ~ .services__slide_1 {
+    display: none;
+  }
+  #services__garanty:checked ~ .services__slide_3 {
+    display: none;
+  }
+  #services__garanty:checked ~ .services__slider-control  li:nth-child(2) {
+    background: #ffffff;
+    color: #32425c;
+  }
+
+    /*включаем 3й слайд*/
+  #services__credit:checked ~ .services__slide_1 {
+    display: none;
+  }
+  #services__credit:checked ~ .services__slide_2 {
+    display: none;
+  }
+  #services__credit:checked ~ .services__slider-control  li:last-child {
+    background: #ffffff;
+    color: #32425c;
+  }
+
+
+/*-------------END SERVICES----------------------*/
 
 
 
